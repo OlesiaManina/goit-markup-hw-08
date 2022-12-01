@@ -1,0 +1,72 @@
+// General header information
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+
+.nav__link {
+    position: relative;
+    color: var(--primary-color);
+    transition: color var(--time-animation);
+
+    &:hover,
+    &:focus {
+        color: var(--fourth-blue-color);
+    }
+}
+
+// Contacts
+
+.contacts {
+    display: flex;
+    align-items: center;
+    margin-left: 318px;
+
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
+}
+
+.contacts__item + .contacts__item {
+    margin-left: 30px;
+}
+
+.contacts__item {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.contacts__div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts__img1 {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.contacts__img2 {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+    color: var(--fourth-blue-color);
+}

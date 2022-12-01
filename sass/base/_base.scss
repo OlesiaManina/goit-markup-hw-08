@@ -1,0 +1,32 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--primary-color);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+h1, h2, h3, p, ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    font-family: inherit
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  

@@ -1,0 +1,34 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--second-background-color);
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+
+.footer__text {
+    font: inherit;
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--second-white-color);
+}
+
+.subscription {
+    margin-left: 93px;
+}
+
+.subscription__text {
+    margin-bottom: 20px;
+    
+    font: inherit;
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    color: var(--second-white-color);
+}
