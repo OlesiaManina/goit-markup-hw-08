@@ -1,12 +1,19 @@
 // General header information
 
 .header {
+    width: 100%;
     border-bottom: 1px solid #ECECEC;
 }
 
 .header__container {
-    display: flex;
-    align-items: center;
+    position: relative;
+    display: block;
+    
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: center;
+    }
+
 }
 
 
@@ -24,46 +31,110 @@
 // Contacts
 
 .contacts {
-    display: flex;
-    align-items: center;
-    margin-left: 318px;
-
+    display: none;
 
     font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: var(--primary-color);
+
+    @media screen and (min-width: $tablet) {
+        display: block;
+
+        font-size: 12px;
+        line-height: calc(14 / 12);
+        }
+
+        @media screen and (max-width: 1199px) {
+            position: absolute;
+            right: 15px;
+            top: 21px;
+        }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: center;
+        margin-left: 318px;
+
+        font-size: 14px;
+        line-height: calc(16 / 14);
+    }
+
 }
 
-.contacts__item + .contacts__item {
-    margin-left: 30px;
+
+@media screen and (min-width: $desktop) {
+    .contacts__item + .contacts__item {
+        margin-left: 30px;
+    }
 }
+
 
 .contacts__item {
     display: block;
+
+    @media screen and (max-width: 1199px) {
+        margin-left: 114px;
+
+        &:first-child {
+            margin-bottom: 10px;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
     padding-top: 32px;
     padding-bottom: 32px;
+    }
 }
 
+
 .contacts__div {
+
+    @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    }
+
+    @media screen and (min-width: $desktop) {
     display: flex;
     align-items: center;
     justify-content: center;
+    }
+
 }
 
 .contacts__img1 {
+
+    @media screen and (min-width: $tablet) {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+    fill: currentColor;
+        }
+
+    @media screen and (min-width: $desktop) {
     width: 16px;
     height: 12px;
     margin-right: 10px;
     fill: currentColor;
+        }
 }
 
 .contacts__img2 {
+
+    @media screen and (min-width: $tablet) {
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+    fill: currentColor;
+        }
+
+    @media screen and (min-width: $desktop) {
     width: 10px;
     height: 16px;
     margin-right: 10px;
     fill: currentColor;
+        }
 }
 
 .contacts__link:hover,

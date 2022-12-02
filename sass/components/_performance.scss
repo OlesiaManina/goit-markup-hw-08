@@ -1,6 +1,11 @@
 .performance {
-    padding-bottom: 94px;
+    display: none;
+    @media screen and (min-width: $desktop) {
+        display: block;
+        padding-bottom: 94px;
+    }
 }
+
 
 .performance__list {
     display: flex;
