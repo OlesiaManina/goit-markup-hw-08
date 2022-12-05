@@ -18,7 +18,16 @@
             <nav class="nav">
                 <a class="logo link" href="./index.html"> 
                     <span class="logo__first-part">Web</span><span class="logo__second-part">Studio</span> </a>
-                <ul class="nav__list">
+                    <button
+                    class="menu-toggle js-open-menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                  >
+                    <svg class="menu-toggle_btn">
+                      <use href="./images/icons.svg#icon-menu_24px"></use>
+                    </svg>
+                  </button>
+                    <ul class="nav__list">
                     <li class="nav__item">
                         <a class="nav__link link current" href="./index.html">Студія</a>
                     </li>
@@ -54,14 +63,14 @@
     </header>
 
     <main>
-    <!-- <div>
+    <div>
         <section class="hero overlay">
             <div class="container">
             <h1 class="hero__title">Ефективні рішення для <br> вашого бізнесу</h1>
             <button class="hero__btn btn " type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
-    </div> -->
+    </div>
         <section class="peculiarities">
             <h2 class="visually-hidden">ОСОБЛИВОСТІ</h2>
             <div class="container">    
@@ -105,13 +114,17 @@
                 </ul>
             </div>
         </section>
-    <!-- <section class="performance">
+    <section class="performance">
         <div class="container">
             <h2 class="performance__title">Чим ми займаємося</h2>
             <ul class="performance__list">
                 <li class="performance__item">
                     <div class="wrapper">
-                        <img class="performance__img" src="./images/img.jpg" alt="ноутбук на столе" width="370">
+                        <img class="performance__img" 
+                        srcset="./images/performance/img1_lg@1x.jpg 1x, ./images/performance/img1_lg@2x.jpg 2x"
+                        src="./images/performance/img1_lg@1x.jpg" 
+                        alt="ноутбук на столе" 
+                        width="370">
                         <div class="overlay-box">
                             <p class="overlay-text">Десктопні додатки</p>
                         </div>
@@ -119,7 +132,11 @@
                 </li>
                 <li class="performance__item">
                     <div class="wrapper">
-                        <img class="performance__img" src="./images/img1.jpg" alt="ноутбук и телефон" width="370">
+                        <img class="performance__img" 
+                        srcset="./images/performance/img2_lg@1x.jpg 1x, ./images/performance/img2_lg@2x.jpg 2x"
+                        src="./images/performance/img2_lg@1x.jpg" 
+                        alt="ноутбук и телефон" 
+                        width="370">
                         <div class="overlay-box">
                             <p class="overlay-text">Мобільні додатки</p>
                         </div>
@@ -127,7 +144,11 @@
                 </li>
                 <li class="performance__item">
                     <div class="wrapper">
-                        <img class="performance__img" src="./images/img2.jpg" alt="планшет и комп" width="370">
+                        <img class="performance__img" 
+                        srcset="./images/performance/img3_lg@1x.jpg 1x, ./images/performance/img3_lg@2x.jpg 2x"
+                        src="./images/performance/img3_lg@1x.jpg" 
+                        alt="планшет и комп" 
+                        width="370">
                         <div class="overlay-box">
                             <p class="overlay-text">Дизайнерські рішення</p>
                         </div>
@@ -135,14 +156,28 @@
                 </li>
             </ul>
         </div>
-    </section> -->
+    </section>
     <section class="team">
         <div class="container">
             <h2 class="team__title">Наша команда</h2>
             <ul class="team__list">
                 <li class="team__item">
-                        <img class="team__img" src="./images/photo1.jpg" alt="Ігор Дем'яненко" 
-                        width="270">
+                        <img class="team__img" 
+                        srcset="
+                  ./images/team/img1_270.jpg 270w,
+                  ./images/team/img1_354.jpg 354w,
+                  ./images/team/img1_450.jpg 450w,
+                  ./images/team/img1_540.jpg 540w,
+                  ./images/team/img1_708.jpg 708w,
+                  ./images/team/img1_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px,
+              100vw"
+                src="./images/team/img1_450.jpg"
+                        alt="Ігор Дем'яненко" 
+                        width="450"
+                        loading="lazy"
+                        />
                         <div class="team__div">
                         <h3 class="team__name">Ігор Дем'яненко</h3>
                         <p class="team__text">Product Designer</p>
@@ -180,8 +215,22 @@
                 </li>
     
                 <li class="team__item">
-                    <img class="team__img" src="./images/photo2.jpg" alt="Ольга Рєпіна" 
-                        width="270">
+                    <img class="team__img" 
+                    srcset="
+                  ./images/team/img2_270.jpg 270w,
+                  ./images/team/img2_354.jpg 354w,
+                  ./images/team/img2_450.jpg 450w,
+                  ./images/team/img2_540.jpg 540w,
+                  ./images/team/img2_708.jpg 708w,
+                  ./images/team/img2_900.jpg 9003
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px,
+              100vw"
+                src="./images/team/img2_450.jpg"
+                    alt="Ольга Рєпіна" 
+                        width="450"
+                        loading="lazy"
+                        />
                         <div class="team__div">
                         <h3 class="team__name">Ольга Рєпіна</h3>
                         <p class="team__text">Frontend Developer</p>
@@ -219,8 +268,22 @@
                 </li>
     
                 <li class="team__item">
-                    <img class="team__img" src="./images/photo3.jpg" alt="Микола Тарасов" 
-                        width="270">
+                    <img class="team__img" 
+                    srcset="
+                  ./images/team/img3_270.jpg 270w,
+                  ./images/team/img3_354.jpg 354w,
+                  ./images/team/img3_450.jpg 450w,
+                  ./images/team/img3_540.jpg 540w,
+                  ./images/team/img3_708.jpg 708w,
+                  ./images/team/img3_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px,
+              100vw"
+                src="./images/team/img3_450.jpg"
+                    alt="Микола Тарасов" 
+                        width="450"
+                        loading="lazy"
+                        />
                         <div class="team__div">
                         <h3 class="team__name">Микола Тарасов</h3>
                         <p class="team__text">Marketing</p>
@@ -258,8 +321,22 @@
                 </li>
     
                 <li class="team__item">                
-                    <img class="team__img" src="./images/photo4.jpg" alt="Михайло Єрмаков" 
-                        width="270">
+                    <img class="team__img" 
+                    srcset="
+                  ./images/team/img4_270.jpg 270w,
+                  ./images/team/img4_354.jpg 354w,
+                  ./images/team/img4_450.jpg 450w,
+                  ./images/team/img4_540.jpg 540w,
+                  ./images/team/img4_708.jpg 708w,
+                  ./images/team/img4_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px,
+              100vw"
+                src="./images/team/img4_450.jpg"
+                    alt="Михайло Єрмаков" 
+                        width="450"
+                        loading="lazy"
+                        />
                         <div class="team__div">
                         <h3 class="team__name">Михайло Єрмаков</h3>
                         <p class="team__text">UI Designer</p>
@@ -299,7 +376,7 @@
         </div>
     </section>
 
-    <!-- <section class="clients">
+    <section class="clients">
         <div class="container">
             <h2 class="clients__title">Постійні клієнти</h2>
             <ul class="clients__list">
@@ -347,10 +424,10 @@
                 </li>
             </ul>
         </div>
-    </section> -->
+    </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="footer__container container">
             <div>
                 <a class="logo-footer logo link" href="/"><span class="logo-footer__first-part">Web</span><span class="logo-footer__second-part">Studio</span></a>
@@ -415,7 +492,7 @@
             </div>
             
         </div>
-    </footer> -->
+    </footer>
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -464,10 +541,51 @@
 
         </div>
     </div>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="menu-toggle_btn">
+                <use href="./images/icons.svg#icon-close_24px"></use>
+              </svg>
+        </button>
+        <ul class="mobile-menu">
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link link current" href="./index.html">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href="">Контакти</a>
+            </li>
+        </ul>
+        <ul class="mobile-contacts">
+            <li class="mobile-contacts_item"><a class="mobile-link__tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="mobile-contacts_item"><a class="mobile-link__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+        <ul class="mobile-socials">
+            <li class="mobile-socials_item">
+                <a href="" class="mobile-socials_link link">Instagram</a></li>
+            <li class="mobile-socials_item">
+                <a href="" class="mobile-socials_link link">Twitter</a></li>
+            <li class="mobile-socials_item">
+                <a href="" class="mobile-socials_link link">Facebook</a></li>
+            <li class="mobile-socials_item">
+                <a href="" class="mobile-socials_link link">LinkedIn</a></li>
+        </ul>
+    </div>
+  
 
     <!-- Скрипт JS -->
 
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>
 

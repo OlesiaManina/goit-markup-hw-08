@@ -32,6 +32,12 @@
 
 .logo-footer {
     margin-bottom: 20px;
+
+    @media screen and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    }
 }
 
 .logo-footer__first-part {

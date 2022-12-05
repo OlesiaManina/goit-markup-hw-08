@@ -6,14 +6,23 @@
 
     padding: 40px;
 
-    width: 530px;
-    min-height: 580px;
+    width: 450px;
+    min-height: 609px;
 
     border-radius: 4px;
     background-color: var(--second-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-
+    
+    @media screen and (min-width: $desktop) {
+    width: 530px;
+    min-height: 580px;
+    }
 }
+
+// @media screen and (min-width: $tablet) {
+//     width: 354px;
+//     min-height: 580px;
+//     }
 
 .modal__title {
     margin-bottom: 12px;
@@ -21,12 +30,16 @@
     text-align: center;
     font-size: 20px;
     font-weight: 700;
-    line-height: calc(23 / 20);
+    line-height: calc(30 / 20);
     color: var(--third-header-color);
+
+    @media screen and (min-width: $desktop) {
+    line-height: calc(23 / 20);
+    }
 }
 
 .modal-form__input {
-    width: 448px;
+    width: 370px;
     height: 40px;
     padding-left: 40px;
     margin-bottom: 10px;
@@ -40,6 +53,10 @@
     &:focus {
         border: 1px solid var(--fourth-blue-color);
         outline: 1px solid var(--fourth-blue-color);
+    }
+
+    @media screen and (min-width: $desktop) {
+    width: 448px;
     }
 }
 
@@ -61,7 +78,7 @@
 
 
 .modal-form__textarea {
-    width: 448px;
+    width: 370px;
     padding: 12px 16px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -80,7 +97,11 @@
     &:focus {
     border: 1px solid var(--fourth-blue-color);
     outline: 1px solid var(--fourth-blue-color);
-}
+    }
+
+    @media screen and (min-width: $desktop) {
+    width: 448px;
+    }
 }
 
 
@@ -137,6 +158,13 @@
 
 .modal-form__text {
     user-select: none;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+
+    @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    }
 }
 
 .modal-form__agreement-link {

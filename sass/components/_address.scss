@@ -1,9 +1,19 @@
 .address__list {
     font-style: normal;
+
+    @media screen and (max-width: 1199px) {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
 }
 
 .address__item:not(:last-child) {
+    margin-bottom: 8px;
+    @media screen and (min-width: $desktop) {
     margin-bottom: 9px;
+    }
 }
 
 .address__location {

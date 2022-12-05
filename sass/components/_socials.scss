@@ -38,9 +38,17 @@
 // Footer socials 
 
 .footer-socials {
-    width: 206px;
-    height: 80px;
+    margin: 60px auto;
+
+    @media screen and (max-width: 1199px) {
+     display: flex;
+     flex-direction: column;
+    }
+
+    @media screen and (min-width: $desktop) {
     margin-left: 70px;
+    
+    }
 }
 
 .socials__link-footer {

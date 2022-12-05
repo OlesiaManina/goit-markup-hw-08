@@ -1,5 +1,4 @@
 .peculiarities {
-  width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -22,7 +21,7 @@
   }
 
   .peculiarities__list-item {
-    width: 450px;
+    width: 100%;
 
     @media screen and (min-width: $tablet) {
     width: 354px;
@@ -38,18 +37,10 @@
     align-items: center;
     justify-content: center;
 
-    width: 450px;
+    width: 100%;
     height: 120px;
 
     background-color: var(--first-background-color);
-
-    @media screen and (min-width: $tablet) {
-      width: 354px;
-        }
-
-    @media screen and (min-width: $desktop) {
-    width: 270px;
-    }
   }
 
   .peculiarities__icon {
@@ -69,7 +60,7 @@
     text-transform: uppercase; 
     color: var(--third-header-color);
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 767px) {
       text-align: center;
       
     }

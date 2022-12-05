@@ -6,13 +6,9 @@
 }
 
 .header__container {
-    position: relative;
-    display: block;
+    display: flex;
+    align-items: center;
     
-    @media screen and (min-width: $desktop) {
-        display: flex;
-        align-items: center;
-    }
 
 }
 
@@ -39,15 +35,10 @@
 
     @media screen and (min-width: $tablet) {
         display: block;
+        margin-left: auto;
 
         font-size: 12px;
         line-height: calc(14 / 12);
-        }
-
-        @media screen and (max-width: 1199px) {
-            position: absolute;
-            right: 15px;
-            top: 21px;
         }
 
     @media screen and (min-width: $desktop) {
@@ -73,7 +64,6 @@
     display: block;
 
     @media screen and (max-width: 1199px) {
-        margin-left: 114px;
 
         &:first-child {
             margin-bottom: 10px;
