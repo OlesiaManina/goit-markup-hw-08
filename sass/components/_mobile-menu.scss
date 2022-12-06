@@ -3,9 +3,9 @@
     min-width: 40px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
   
-    margin-left: 276px;
+    margin-left: auto;
     padding: 0;
     background-color: transparent;
     cursor: pointer;
@@ -137,6 +137,7 @@
   .menu-toggle_btn {
     width: 24px;
     height: 16px;
+    // margin-left: auto;
     fill: #212121;
     transition: fill var(--time-animation);
     

@@ -1,14 +1,15 @@
 // General header information
 
 .header {
-    width: 100%;
+    max-width: 100%;
     border-bottom: 1px solid #ECECEC;
 }
 
 .header__container {
+    @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
-    
+    }
 
 }
 
